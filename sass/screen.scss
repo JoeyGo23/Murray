@@ -4,10 +4,14 @@
 $max_width: 960px;
 $gutter_width: 20px;
 $col_count: 12;
-$gutter_count: $col_count - 1;
-$total_gutter_width: $gutter_count * $gutter_width;
+// $gutter_count: $col_count - 1;
+// $total_gutter_width: $gutter_count * $gutter_width;
+// $col_width: ($max_width - $total_gutter_width) / $col_count;
 
-$col_width: ($max_width - $total_gutter_width) / $col_count;
+$col_lg: 100px;
+$col_md: 50px;
+$col_sm: 25px;
+
 
 // Global templates
 
@@ -29,10 +33,30 @@ body {
 
 
 nav{
-	width: 10%;
-	position: fixed;
-	background-color: darkgrey;
-	border-radius: 10px;
+    background: #fff url(/img/1pxDarkBlue.svg) repeat-y 0 0;
+    width: $col_md * 2;
+    height: 500px;
+	position: relative;
+	// background-color: darkgrey;
+	border-radius: 5px;
+    float: left;
+}
+
+.store{
+    width: $col_lg * 8;
+    position: relative;
+    float: right;
+
+    ul{
+        li{
+            float: left;
+        }
+    }
+
+    .alert{
+        
+    }
+
 }
 
 a {

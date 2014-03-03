@@ -56,10 +56,21 @@ table {
 }
 
 nav {
-  width: 10%;
-  position: fixed;
-  background-color: darkgrey;
-  border-radius: 10px;
+  background: white url(/img/1pxDarkBlue.svg) repeat-y 0 0;
+  width: 100px;
+  height: 500px;
+  position: relative;
+  border-radius: 5px;
+  float: left;
+}
+
+.store {
+  width: 800px;
+  position: relative;
+  float: right;
+}
+.store ul li {
+  float: left;
 }
 
 a {
